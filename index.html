@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garges Grizzly – Club de Hockey</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0a0e1a;
+      color: #e8eaf0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1.5rem 2rem;
+    }
+
+    .logo-bear {
+      font-size: 5rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    header p.tagline {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #8a9bbf;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #1e6fbf;
+      margin: 1.5rem auto;
+      border-radius: 2px;
+    }
+
+    main {
+      flex: 1;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 4rem;
+      width: 100%;
+    }
+
+    .card {
+      background: #131929;
+      border: 1px solid #1e2c47;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #c8d8f0;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .coming-soon-badge {
+      display: inline-block;
+      background: #1e2c47;
+      color: #5b8fd4;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      border: 1px solid #2a4070;
+    }
+
+    .card p {
+      color: #6a7d9e;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .card.schedule-card {
+      border-style: dashed;
+      border-color: #1e3a6a;
+    }
+
+    .ice-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      .links-grid { grid-template-columns: 1fr; }
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 1rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: transform 0.15s, background 0.15s;
+      border: 1px solid transparent;
+    }
+
+    .social-link:hover { transform: translateY(-2px); }
+
+    .social-link.instagram {
+      background: #1a1428;
+      color: #d97aee;
+      border-color: #3a1f55;
+    }
+    .social-link.instagram:hover { background: #261a3a; }
+
+    .social-link.facebook {
+      background: #0e1c36;
+      color: #5b8fd4;
+      border-color: #1e3562;
+    }
+    .social-link.facebook:hover { background: #152744; }
+
+    .social-link.email {
+      background: #0e2420;
+      color: #3fbf8f;
+      border-color: #1a4035;
+      grid-column: 1 / -1;
+    }
+    .social-link.email:hover { background: #152f2a; }
+
+    .social-icon {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #2e4065;
+      font-size: 0.8rem;
+      border-top: 1px solid #131929;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Garges Grizzly" style="width: 160px; height: auto; margin-bottom: 1rem;" />
+    <h1>Garges Grizzly</h1>
+    <p class="tagline">Club de Hockey sur Glace</p>
+    <p style="margin-top: 0.4rem; font-size: 0.8rem; color: #3a5075; letter-spacing: 2px; text-transform: uppercase;">Depuis 1976</p>
+    <div class="divider"></div>
+  </header>
+
+  <main>
+
+    <div class="card schedule-card">
+      <div class="ice-icon">🏒</div>
+      <div class="coming-soon-badge">Prochainement</div>
+      <h2>Planning d'entraînement</h2>
+      <p>
+        Le planning d'entraînement pour la prochaine saison sera bientôt disponible ici.
+        Revenez nous voir ou suivez-nous sur les réseaux sociaux pour être informé en avant-première.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Nous retrouver</h2>
+      <div class="links-grid" style="margin-top: 1.25rem;">
+
+        <a class="social-link instagram"
+           href="https://www.instagram.com/gargesgrizzly"
+           target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+          Instagram
+        </a>
+
+        <a class="social-link facebook"
+           href="https://www.facebook.com/gargesgrizzly"
+           target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+          Facebook
+        </a>
+
+        <a class="social-link email"
+           href="mailto:contact@gargesgrizzly.fr">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Nous envoyer un mail
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Garges Grizzly – Tous droits réservés
+  </footer>
+
+</body>
+</html>
